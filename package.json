@@ -7,7 +7,7 @@
     "compile:sass": "sass --watch scss:site/assets/css",
     "build": "purgecss --css site/assets/css/style.css --content site/index.html -o site/assets/css-min/style.css && purgecss --css site/assets/css/fontawesome.css --content site/index.html -o site/assets/css-min/fontawesome.css",
     "watch": "watch 'npm run build' ./site/assets/css"
-    },
+  },
   "keywords": [
     "NA"
   ],
