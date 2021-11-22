@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOWARDKIND</title>
+
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/fontawesome.css">
+
+	<!-- ACCORDION DOES NOT OPEN SMOOTHLY AFTER CSSPURGE -->
+	<!-- <link rel="stylesheet" href="./assets/css-min/style.css">
+	<link rel="stylesheet" href="./assets/css-min/fontawesome.css"> -->
+
+	<!-- favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicons/site.webmanifest">
+	<link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#3134d8">
+	<link rel="shortcut icon" href="assets/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#3134d8">
+	<meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#3134d8">
+
+	<!-- SEO -->
+	<meta name="description"
+		content="We faciliate construction. Our vision is to reduce & automate time-consuming processes that chip away your bottom line." />
+
+	<!-- OPEN GRAPH -->
+	<meta property="og:title" content="Howard Kind">
+	<meta property="og:url" content="https://howard-kind-com-development-uggbl.ondigitalocean.app">
+	<meta property="og:description"
+		content="We serve the construction industry with software and services. Our vision is to reduce & automate time-consuming processes that chip away your bottom line. We specialize in data extraction from PDFs.">
+	<meta property="og:type" content="website">
+	<meta name="image" property="og:image"
+		content="https://howard-kind-com-development-uggbl.ondigitalocean.app/assets/images/section-B-1.png">
+</head>
+
+<body>
+
+	<main class="container-fluid grad-bg ">
+
+		<!-- NAVBAR SECTION HEADER-->
+		<header>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark menu" id="NavHeader">
+				<div class="container" id="HeaderSection">
+					<a class="navbar-brand" href="#">
+						<img src="./assets/images/HowardKind-horizontal white.svg" class="img-fluid"
+							style=" height:50px; max-width: 60vw;" alt="Howard Kind logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+						<ul class="navbar-nav">
+
+
+							<li class="nav-item ms-auto mx-lg-3 my-3" onclick="toSoftware()">
+								<div class="nav-link btn " style="color:whitesmoke" id="SoftwareButton"><span class="fas fa-laptop"
+										style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Software</div>
+							</li>
+
+
+							<li class="nav-item ms-auto mx-lg-3 my-3" onclick="toServices();">
+								<div class="nav-link btn " style="color:whitesmoke" id="ServicesButton"><span class="fas fa-cogs"
+										style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Services</div>
+							</li>
+
+
+							<li class="nav-item ms-auto mx-lg-3 my-3">
+								<a class="nav-link btn " href="https://app.howardkind.com"><span class="fas fa-key"
+										style="width: 20px;width: 16px;"></span> Login</a>
+							</li>
+							<li class="nav-item ms-auto mx-lg-3 my-3" onclick="toContact();">
+								<div class="nav-link btn " style="color:whitesmoke" id="ContactButton"><span class="fas fa-mail-bulk"
+										style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Contact</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- ***
+INTRO SECTION
+*** -->
+		<section id="WeFaciliateConst">
+
+			<div class="row" style="min-height: 100vh; max-width: 99vw">
+			
+				<div class="col-lg-8 mx-auto my-auto">
+
+					<div style="text-align: center; ">
+						<div class="pt-5"></div>
+						<div class="pt-5 display-5 fw-bold">
+
+							We facilitate construction.
+
+							<div class="pt-5 display-5">
+								Our vision is to reduce & automate time-consuming processes that chip away
+								your&nbsp;bottom&nbsp;line.
+							</div>
+						</div>
+					</div>
+					<div class="row pt-5 justify-content-center ">
+						<div class="col display-6 " style="text-align: center;">
+							Learn more:
+						</div>
+						<div class="row g-2 justify-content-center">
+							<div class="col-md-auto" style="text-align: center;">
+								<button class="btn btn-primary btn-lg" onclick="toSoftware();"><span class="fas fa-laptop"
+										style="width: 25px;height: 20px;"></span>
+									Software</button>
+							</div>
+							<div class="col-md-auto" style="text-align: center;">
+								<button class="btn btn-primary btn-lg" onclick="toServices();"><span class="fas fa-cogs"
+										style="width: 25px;height: 20px;"></span>
+									Services</button>
+							</div>
+							<div class="col-md-auto" style="text-align: center;">
+								<button class="btn btn-primary btn-lg" onclick="toContact();"><span class="fas fa-mail-bulk"
+										style="width: 25px;height: 20px;"></span>
+									Contact</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- BLUE TO WHITE -->
+		<div class="row grad-bg">
+			<div class="col p-0 mx-n2">
+				<svg id="wave" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+							<stop stop-color="whitesmoke" offset="0%"></stop>
+							<stop stop-color="whitesmoke" offset="100%"></stop>
+						</linearGradient>
+					</defs>
+					<path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+						d="M0,80L34.3,71.7C68.6,63,137,47,206,35C274.3,23,343,17,411,23.3C480,30,549,50,617,60C685.7,70,754,70,823,61.7C891.4,53,960,37,1029,36.7C1097.1,37,1166,53,1234,60C1302.9,67,1371,63,1440,65C1508.6,67,1577,73,1646,70C1714.3,67,1783,53,1851,51.7C1920,50,1989,60,2057,53.3C2125.7,47,2194,23,2263,18.3C2331.4,13,2400,27,2469,40C2537.1,53,2606,67,2674,75C2742.9,83,2811,87,2880,86.7C2948.6,87,3017,83,3086,70C3154.3,57,3223,33,3291,25C3360,17,3429,23,3497,21.7C3565.7,20,3634,10,3703,20C3771.4,30,3840,60,3909,63.3C3977.1,67,4046,43,4114,38.3C4182.9,33,4251,47,4320,43.3C4388.6,40,4457,20,4526,21.7C4594.3,23,4663,47,4731,56.7C4800,67,4869,63,4903,61.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+
+		<!-- ***
+		SOFTWARE SECTION
+		*** -->
+		<section>
+			<div class="row other-bg">
+				<div class="col-md-8 mx-auto p-2" id="SoftwareSection">
+
+					<div class="display-6">
+						<i class="fas fa-laptop"></i>
+						Software
+					</div>
+
+
+					<div class="fs-4 py-4">
+						<span style="font-weight: 600;">HOWARD</span><span style="font-weight: 300">KIND</span> PLATFORM is our
+						flagship tool. We transform your PDFs into an interactive web app, that doesn't require advanced
+						computer skills to operate.
+					</div>
+
+					<div class="accordion" id="accordion">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+									aria-expanded="true" aria-controls="collapseOne">
+									<div class="h3"><i class="fas fa-search"></i> Find drawings faster
+									</div>
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+								data-bs-parent="#accordion">
+								<div class="accordion-body">
+									<div class="row flex-row-reverse">
+
+										<div class="col-xl-8 text-center">
+											<div id="carouselSlidesOnlyA" class="carousel slide" data-bs-ride="carousel"
+												data-bs-interval="false">
+
+												<div class="carousel-inner">
+													<div class="carousel-item active" style="text-align: center;">
+														<video muted loop controls autoplay width="100%" preload="metadata"
+															style="max-height: 80vh;">
+															<source src="assets/images/HK-2.mp4" type="video/mp4">
+															Sorry, your browser doesn't support embedded videos.
+														</video>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xl-4">
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">
+													<p>
+														Search for text in your documents using keywords such as drawing titles and equipment tags.
+													</p>
+												</li>
+												<li class="list-group-item">
+													<p>
+														Find related documents with a single click.
+													</p>
+												</li>
+												<li class="list-group-item">Project documents are automatically linked together. Follow the
+													inter-drawing links (continuations) to see the complete picture.
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+									<div class="h3"><i class="fas fa-tasks"></i> Manage construction scope
+									</div>
+
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+								data-bs-parent="#accordion">
+
+								<div class="accordion-body">
+									<div class="row">
+
+										<div class="col-xl-10 text-center">
+											<div id="carouselSlidesOnlyB" class="carousel slide carousel-dark " data-bs-ride="carousel" pause="hover">
+
+
+												<div class="carousel-indicators" style="color: black;">
+													<button type="button" data-bs-target="#carouselSlidesOnlyB" data-bs-slide-to="0"
+														class="active" aria-current="true" aria-label="Slide 1"></button>
+													<button type="button" data-bs-target="#carouselSlidesOnlyB" data-bs-slide-to="1"
+														aria-label="Slide 2"></button>
+													<button type="button" data-bs-target="#carouselSlidesOnlyB" data-bs-slide-to="2"
+														aria-label="Slide 3"></button>
+												</div>
+
+												<div class="carousel-inner">
+													<div class="carousel-item active" style="text-align: center; height: 35rem;">
+														<div>
+															<p class="fs-3" style="color: black;"> Scope is automatically extracted from your PDF
+																files.</p>
+														</div>
+
+														<picture>
+															<source srcset="assets/images/section-B-1.png.webp" type="image/webp"
+																style="max-width: 100%;">
+															<source srcset="assets/images/section-B-1.png" type="image/jpeg" style="max-width: 100%;">
+															<img src="assets/images/section-B-1.png" style="max-width: 100%;"
+																alt="example of technical drawing with items of interest highlited by software overlay">
+														</picture>
+
+													</div>
+													<div class="carousel-item" style="text-align: center; height: 35rem;">
+
+														<div>
+															<p class="fs-3" style="color: black;"> Update your task status to get accurate progress
+																reports.</p>
+														</div>
+
+														<picture>
+															<source srcset="assets/images/section-B-2.png.webp" type="image/webp"
+																style="max-width: 100%;">
+															<source srcset="assets/images/section-B-2.png" type="image/jpeg" style="max-width: 100%;">
+															<img src="assets/images/section-B-2.png" style="max-width: 100%;"
+																alt="example of user changing scope status from in progress to complete">
+														</picture>
+
+													</div>
+													<div class="carousel-item" style="text-align: center; height: 35rem;">
+
+														<div>
+															<p class="fs-3" style="color: black;"> Comments and pictures can be easily added to a
+																project task by field or office users.
+															</p>
+														</div>
+
+														<picture>
+															<source srcset="assets/images/section-B-3.png.webp" type="image/webp"
+																style="max-width: 100%;">
+															<source srcset="assets/images/section-B-3.png" type="image/jpeg" style="max-width: 100%;">
+															<img src="assets/images/section-B-3.png" style="max-width: 100%;"
+																alt="example of user usint note and upload picture features">
+														</picture>
+
+													</div>
+
+
+													<button class="carousel-control-prev" type="button" data-bs-target="#carouselSlidesOnlyB"
+														data-bs-slide="prev">
+														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+														<span class="visually-hidden">Previous</span>
+													</button>
+													<button class="carousel-control-next" type="button" data-bs-target="#carouselSlidesOnlyB"
+														data-bs-slide="next">
+														<span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+														<span class="visually-hidden">Next</span>
+													</button>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+									<div class="h3"><i class="fas fa-chart-bar"></i> Generate progress reports
+									</div>
+
+								</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+								data-bs-parent="#accordion">
+
+								<div class="accordion-body">
+									<div class="row">
+
+										<div class="col-xl-10 text-center">
+											<div id="carouselSlidesOnlyC" class="carousel slide carousel-dark " data-bs-ride="carousel" pause="hover">
+
+
+												<div class="carousel-indicators" style="color: black;">
+													<button type="button" data-bs-target="#carouselSlidesOnlyC" data-bs-slide-to="0"
+														class="active" aria-current="true" aria-label="Slide 1"></button>
+													<button type="button" data-bs-target="#carouselSlidesOnlyC" data-bs-slide-to="1"
+														aria-label="Slide 2"></button>
+												</div>
+
+												<div class="carousel-inner">
+													<div class="carousel-item active" style="text-align: center; height: 35rem;">
+														<div>
+															<p class="fs-3" style="color: black;"> Get up to the minute status of any field task.
+															</p>
+														</div>
+
+														<picture>
+															<source srcset="assets/images/section3-b-pie-chart.png.webp" type="image/webp"
+																style="max-width: 100%;">
+															<source srcset="assets/images/section3-b-pie-chart.png" type="image/jpeg"
+																style="max-width: 100%;">
+															<img src="assets/images/section3-b-pie-chart.png" style="max-width: 100%;"
+																alt="example of pie chart showing breakdown of project progress">
+														</picture>
+
+													</div>
+													<div class="carousel-item" style="text-align: center; height: 35rem;">
+
+														<div>
+															<p class="fs-3" style="color: black;"> Generate summary and S-curve reports to quickly
+																convey
+																facts.</p>
+														</div>
+
+														<picture>
+															<source srcset="assets/images/Section3-s-curve-orig.png.webp" type="image/webp"
+																style="max-width: 100%;">
+															<source srcset="assets/images/Section3-s-curve-orig.png" type="image/jpeg"
+																style="max-width: 100%;">
+															<img src="assets/images/Section3-s-curve-orig.png" style="max-width: 100%;"
+																alt="example of an s-curve chart showing project progress">
+														</picture>
+
+													</div>
+
+													<button class="carousel-control-prev" type="button" data-bs-target="#carouselSlidesOnlyC"
+														data-bs-slide="prev">
+														<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+														<span class="visually-hidden">Previous</span>
+													</button>
+													<button class="carousel-control-next" type="button" data-bs-target="#carouselSlidesOnlyC"
+														data-bs-slide="next">
+														<span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+														<span class="visually-hidden">Next</span>
+													</button>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ***
+		SERVICES SECTION
+		*** -->
+
+		<section id="ServicesSection" class="grad-bg py-5 px-1">
+			<div class="row justify-content-md-center" style="flex-direction: row-reverse;">
+				<div class="col-xl-4">
+					<div class="display-6 ">
+						<i class="fas fa-cogs"></i>
+						Services
+
+					</div>
+					<div style="line-height: 150%;" class="fs-4 py-4">
+						If it exists on a drawing, we have a process to assemble the information you require.
+					</div>
+					<ul class="fa-ul">
+						<li style="line-height: 200%;"><i class="fa-li fas fa-file-pdf"></i>We extract data from PDF documents
+							(e.g.: bill of materials, scope take-offs and quantities)
+							and deliver in an Excel-compatible format.</li>
+						<li style="line-height: 200%;"><i class="fa-li fas fa-folder"></i>We automate repetitive tasks such as
+							sorting engineering documents by systems, commodities, and area.
+						</li>
+					</ul>
+				</div>
+				<div class="col-xl-4 text-center">
+					<img src="./assets/images/Team work_Monochromatic.svg" class="pt-5 pt-lg-0" alt=""
+						style="height: 354px; width: 470px;max-width: 90vw;">
+				</div>
+			</div>
+		</section>
+
+		<!-- BLUE TO WHITE -->
+		<div class="row grad-bg">
+			<div class="col p-0 m-0">
+				<svg id="wave2" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+							<stop stop-color="whitesmoke" offset="0%"></stop>
+							<stop stop-color="whitesmoke" offset="100%"></stop>
+						</linearGradient>
+					</defs>
+					<path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-2)"
+						d="M0,80L34.3,71.7C68.6,63,137,47,206,35C274.3,23,343,17,411,23.3C480,30,549,50,617,60C685.7,70,754,70,823,61.7C891.4,53,960,37,1029,36.7C1097.1,37,1166,53,1234,60C1302.9,67,1371,63,1440,65C1508.6,67,1577,73,1646,70C1714.3,67,1783,53,1851,51.7C1920,50,1989,60,2057,53.3C2125.7,47,2194,23,2263,18.3C2331.4,13,2400,27,2469,40C2537.1,53,2606,67,2674,75C2742.9,83,2811,87,2880,86.7C2948.6,87,3017,83,3086,70C3154.3,57,3223,33,3291,25C3360,17,3429,23,3497,21.7C3565.7,20,3634,10,3703,20C3771.4,30,3840,60,3909,63.3C3977.1,67,4046,43,4114,38.3C4182.9,33,4251,47,4320,43.3C4388.6,40,4457,20,4526,21.7C4594.3,23,4663,47,4731,56.7C4800,67,4869,63,4903,61.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
+					</path>
+				</svg>
+			</div>
+		</div>
+
+		<!-- ***
+		CONTACT SECTION
+		*** -->
+		<section>
+			<div class="row other-bg">
+				<div class="col-md-6 mx-auto p-2" id="ContactSection">
+
+					<div style="text-align: center; ">
+						<div class="h1"><i class="fas fa-mail-bulk"></i> Contact Us</div>
+						<div class="fs-3">Would you like a demo? Have any questions?
+						</div>
+						<div class="py-2">
+							<a href="mailto:info@howardkind.com" target="_blank" rel="noopener noreferrer"
+								class="link-dark">info@howardkind.com</a>
+						</div>
+						<div>
+							<a href="tel:1-800-369-3763" class="link-dark">1-800-369-3763</a>
+						</div>
+						<div class="pt-3">
+							or message us directly:
+						</div>
+						<div>
+							<div id="Thanks">
+								<div id="ThanksText1" class="visually-hidden vertical-center h3 pt-5 ">
+									Thank you. We will be in touch soon.
+								</div>
+								<div id="ThanksText2" class="visually-hidden vertical-center h3">
+									We will be in touch soon.
+								</div>
+							</div>
+							<form action="https://api.staticforms.xyz/submit" name="inputform" id="inputForm" method="post">
+								<input type="hidden" name="accessKey" value="5a81fb02-c5ec-4db6-b023-00d0d4eeddc4">
+								<!-- Required -->
+								<div class="form-group">
+									<input type="text" name="name" placeholder="Name" class="form-control"> <!-- Optional -->
+								</div>
+								<div class="form-group">
+									<input type="email" name="email" placeholder="Email*" class="form-control" required>
+									<!-- Optional -->
+								</div>
+								<div class="form-group">
+									<input type="text" name="phone" placeholder="Phone (optional)" class="form-control">
+									<!-- Optional -->
+								</div>
+								<div class="form-group">
+									<textarea name="message" rows="7" class="form-control" placeholder="Your message"></textarea>
+									<!-- Optional -->
+								</div>
+								<input type="text" name="honeypot" style="display: none;" placeholder="NA">
+								<!-- Optional -->
+								<!-- <input type="hidden" name="redirectTo" value="#">  -->
+								<!-- Optional -->
+								<div>
+									<button onclick="send()" class="btn button rounded border border-2 my-1 w-100">SEND</button>
+								</div>
+								<div class="text-center py-2">
+									We value privacy. We will never sell your data or send you unsolicited email.
+								</div>
+								<div class="pb-5"></div>
+								<div class="pb-lg-5"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- NAVBAR SECTION FOOTER -->
+		<footer>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col ">
+						<img src="./assets/images/HowardKind-horizontal white.svg"
+							style="width:300px; height:50px; max-width: 70vw;" alt="logo">
+					</div>
+					<div class="col-auto align-baseline">
+
+						<span class="btn" id="GotToTopButton2" onclick="toTop();">
+							<i class="fas fa-arrow-up" style="color:whitesmoke;"></i>
+						</span>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<!-- SCROLL ACCORDION TO NEWLY OPENED PANEL -->
+<script>
+	const accordionItems = document.querySelectorAll('.accordion-collapse')
+	const acc = document.getElementById('accordion')
+	const NavHeader = document.getElementById('NavHeader');
+
+	accordionItems.forEach((el) => {
+		el.addEventListener('shown.bs.collapse', (e) => {
+			var scrollOffset = acc.scrollTop + el.parentNode.offsetTop - NavHeader.getBoundingClientRect().height - 10;
+			window.scroll({
+				top: scrollOffset,
+				left: 0,
+				behavior: 'smooth'
+			});
+		});
+	})
+</script>
+
+<!-- SMOOTH SCROLLING TO THE MAJOR SECTIONS -->
+<!-- https://github.com/iamdustan/smoothscroll -->
+<script defer src="assets/js/smoothscroll.min.js"></script>
+<script>
+
+	function toSoftware() {
+
+		document.getElementById('navbarNav').classList.remove('show');
+
+		const SoftwareSection = document.getElementById('SoftwareSection');
+		const NavHeader = document.getElementById('NavHeader');
+
+		let y1 = SoftwareSection.getBoundingClientRect().top;
+		let y2 = NavHeader.getBoundingClientRect().height;
+		let y = y1 - y2;
+
+		window.scrollBy({ top: y, behavior: 'smooth' });
+	}
+
+	function toServices() {
+
+		document.getElementById('navbarNav').classList.remove('show');
+
+		const SoftwareSection = document.getElementById('ServicesSection');
+		const NavHeader = document.getElementById('NavHeader');
+
+		let y1 = SoftwareSection.getBoundingClientRect().top;
+		let y2 = NavHeader.getBoundingClientRect().height;
+		let y = y1 - y2 + 10;
+
+		window.scrollBy({ top: y, behavior: 'smooth' });
+	}
+
+	function toContact() {
+
+		document.getElementById('navbarNav').classList.remove('show');
+
+		const SoftwareSection = document.getElementById('ContactSection');
+		const NavHeader = document.getElementById('NavHeader');
+
+		let y1 = SoftwareSection.getBoundingClientRect().top;
+		let y2 = NavHeader.getBoundingClientRect().height;
+		let y = y1 - y2;
+
+		window.scrollBy({ top: y, behavior: 'smooth' });
+	}
+
+	function toTop() {
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth'
+		});
+	}
+
+</script>
+
+<!-- CONTACT US FORM VALIDATION & SUBMISSION -->
+<script>
+
+	var element = document.getElementById("inputForm");
+	element.addEventListener("submit", function (event) {
+		event.preventDefault()
+	})
+
+
+	function send() {
+
+		let url = 'https://api.staticforms.xyz/submit';
+
+		let email_field = document.forms['inputform'].elements['email']
+
+		if (email_field.checkValidity()) {
+			let form = document.forms['inputform'];
+
+			var elements = form.elements;
+			let s = "";
+
+			for (var i = 0, element; element = elements[i++];) {
+				s += encodeURIComponent(element.name) + '=' + encodeURIComponent(element.value) + '&';
+			}
+			fetch(url, {
+				'Content-Type': 'application/json',
+				method: 'POST',
+				body: s,
+				mode: "cors",
+				redirect: "error"
+			});//.then(response => response.json()).then(data => console.log(data));
+			//TODO: add .catch() above
+
+			document.getElementById("ThanksText1").innerText = "Thank you " + email_field.value;
+			document.getElementById("ThanksText1").classList.remove('visually-hidden');
+			document.getElementById("ThanksText2").classList.remove('visually-hidden');
+			document.getElementById("ThanksText1").classList.add('fade-in');
+			document.getElementById("ThanksText2").classList.add('fade-in');
+			document.getElementById("Thanks").style.height = '300px';
+			document.getElementById("inputForm").classList.add('visually-hidden');
+
+		}
+		else {
+			// failed validation
+			email_field.classList.add('email');
+			email_field.focus();
+		}
+	}
+</script>
+
+</html>

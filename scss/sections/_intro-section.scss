@@ -1,0 +1,24 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+body {
+  @include gradient;
+}
+
+.grad-bg {
+  @include gradient;
+  color: $white-offset;
+}
+
+.other-bg
+{
+  background-color: whitesmoke;
+  color: $black-offset;
+}
+
+.accordion
+{
+  li{
+    color: black;
+  }
+}

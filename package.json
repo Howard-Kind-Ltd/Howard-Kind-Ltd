@@ -1,0 +1,26 @@
+{
+  "name": "howardkind.com",
+  "version": "1.0.0",
+  "description": "The Howard Kind public-facing web site",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:site/assets/css",
+    "build": "purgecss --css site/assets/css/style.css --content site/index.html -o site/assets/css-min/style.css && purgecss --css site/assets/css/fontawesome.css --content site/index.html -o site/assets/css-min/fontawesome.css",
+    "watch": "watch 'npm run build' ./site/assets/css"
+    },
+  "keywords": [
+    "NA"
+  ],
+  "author": "Howard Kind",
+  "license": "",
+  "devDependencies": {
+    "purgecss": "^4.0.3",
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.4.0",
+    "bootstrap": "^5.1.3",
+    "postcss-cli": "^9.0.2"
+  }
+}

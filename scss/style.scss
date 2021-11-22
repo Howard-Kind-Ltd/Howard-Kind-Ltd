@@ -1,0 +1,10 @@
+@use "custom" as *;
+
+// IMPORT THE COMPONENTS
+@use "./components/mixins";
+
+@use "./components/fade";
+
+// import the sections
+@use "./sections/navbar";
+@use "./sections/intro-section";

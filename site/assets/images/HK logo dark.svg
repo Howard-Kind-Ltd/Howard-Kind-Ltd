@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 440.17003 274.07999"
+   version="1.1"
+   sodipodi:docname="HK logo..svg"
+   width="440.17001"
+   height="274.07999"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview33"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.64"
+     inkscape:cx="670.3125"
+     inkscape:cy="394.53125"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#1a1a1a;}</style>
+  </defs>
+  <title
+     id="title6">HowardKind-vertical</title>
+  <polygon
+     class="cls-1"
+     points="417.13,278.06 463.5,278.06 463.5,204.63 537.71,204.63 537.71,278.06 584.1,278.06 584.1,96.41 537.71,96.41 537.71,167.01 463.5,167.01 463.5,96.41 417.13,96.41 "
+     id="polygon28"
+     transform="translate(-364.2,-50.2)" />
+  <path
+     class="cls-1"
+     d="M 219.9,0 H 0 V 274.08 H 440.17 V 0 Z m 120.58,227.86 -73.17,-82.19 v 82.19 H 219.9 v 32.36 H 13.9 V 13.85 h 206 v 32.36 h 47.41 v 78.07 l 71.11,-78.07 h 55.38 l -80.14,86.32 83,95.33 z"
+     id="path30" />
+  <metadata
+     id="metadata850">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>HowardKind-vertical</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

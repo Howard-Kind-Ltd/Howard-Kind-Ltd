@@ -1,0 +1,5 @@
+test url: https://howard-kind-com-development-uggbl.ondigitalocean.app/
+live url: https://howardkind.com
+
+Changes necessary to move from test to live url:
+index.html: change URL in (2) locations in the head 
