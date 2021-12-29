@@ -3,4 +3,5 @@
 // GRADIENT MIXIN 
 @mixin gradient {
     background: linear-gradient(to right, rgba($primary, 1), rgba($secondary, 1));
+    // background: $primary;
 }
