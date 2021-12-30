@@ -27,18 +27,19 @@
 
 	<!-- SEO -->
 	<meta name="description"
-		content="We faciliate construction. Our vision is to reduce & automate time-consuming processes that chip away your bottom line." />
+				content="We faciliate construction. Our vision is to reduce & automate time-consuming processes that chip away your bottom line." />
 
 	<!-- OPEN GRAPH -->
 	<meta property="og:title" content="Howard Kind">
 	<meta property="og:url" content="https://howardkind.com">
 	<meta property="og:description"
-		content="We serve the construction industry with software and services. Our vision is to reduce & automate time-consuming processes that chip away your bottom line. We specialize in data extraction from PDFs.">
+				content="We serve the construction industry with software and services. Our vision is to reduce & automate time-consuming processes that chip away your bottom line. We specialize in data extraction from PDFs.">
 	<meta property="og:type" content="website">
 	<meta name="image" property="og:image" content="https://howardkind.com/assets/images/section-B-1.png">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162114635-1"></script>
+
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -58,33 +59,33 @@
 		<div class="container" id="HeaderSection">
 			<a class="navbar-brand" href="#">
 				<img src="./assets/images/HowardKind-horizontal white.svg" class="img-fluid"
-					style="height:50px; max-width: 60vw;" alt="Howard Kind logo">
+						 style="height:50px; max-width: 60vw;" alt="Howard Kind logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				<ul class="navbar-nav">
 
-					<li class="nav-item ms-auto my-3" onclick="toSoftware()">
+					<li class="nav-item ms-auto my-3" onclick="smoothScroolTo('SoftwareSection')">
 						<div class="nav-link btn" style="color:whitesmoke" id="SoftwareButton"><span class="fas fa-laptop"
-								style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Software</div>
+										style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Software</div>
 					</li>
 
-					<li class="nav-item ms-auto my-3" onclick="toServices();">
+					<li class="nav-item ms-auto my-3" onclick="smoothScroolTo('ServicesSection');">
 						<div class="nav-link btn" style="color:whitesmoke" id="ServicesButton"><span class="fas fa-cogs"
-								style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Services</div>
+										style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Services</div>
 					</li>
 
 					<li class="nav-item ms-auto my-3">
 						<a class="nav-link btn" href="https://app.howardkind.com"><span class="fas fa-key"
-								style="width: 20px;width: 16px;"></span> Login</a>
+										style="width: 20px;width: 16px;"></span> Login</a>
 					</li>
 
-					<li class="nav-item ms-auto my-3" onclick="toContact();">
+					<li class="nav-item ms-auto my-3" onclick="smoothScroolTo('ContactSection');">
 						<div class="nav-link btn" style="color:whitesmoke" id="ContactButton"><span class="fas fa-mail-bulk"
-								style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Contact</div>
+										style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Contact</div>
 					</li>
 				</ul>
 			</div>
@@ -115,18 +116,18 @@ INTRO SECTION
 					</div>
 					<div class="row g-2 justify-content-center">
 						<div class="col-md-auto" style="text-align: center;">
-							<button class="btn btn-primary btn-lg" onclick="toSoftware();"><span class="fas fa-laptop"
-									style="width: 25px;height: 20px;"></span>
+							<button class="btn btn-primary btn-lg" onclick="smoothScroolTo('SoftwareSection')"><span
+											class="fas fa-laptop" style="width: 25px;height: 20px;"></span>
 								Software</button>
 						</div>
 						<div class="col-md-auto" style="text-align: center;">
-							<button class="btn btn-primary btn-lg" onclick="toServices();"><span class="fas fa-cogs"
-									style="width: 25px;height: 20px;"></span>
+							<button class="btn btn-primary btn-lg" onclick="smoothScroolTo('ServicesSection')"><span
+											class="fas fa-cogs" style="width: 25px;height: 20px;"></span>
 								Services</button>
 						</div>
 						<div class="col-md-auto" style="text-align: center;">
-							<button class="btn btn-primary btn-lg" onclick="toContact();"><span class="fas fa-mail-bulk"
-									style="width: 25px;height: 20px;"></span>
+							<button class="btn btn-primary btn-lg" onclick="smoothScroolTo('ContactSection');"><span
+											class="fas fa-mail-bulk" style="width: 25px;height: 20px;"></span>
 								Contact</button>
 						</div>
 					</div>
@@ -149,7 +150,7 @@ INTRO SECTION
 						</linearGradient>
 					</defs>
 					<path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-						d="M0,80L34.3,71.7C68.6,63,137,47,206,35C274.3,23,343,17,411,23.3C480,30,549,50,617,60C685.7,70,754,70,823,61.7C891.4,53,960,37,1029,36.7C1097.1,37,1166,53,1234,60C1302.9,67,1371,63,1440,65C1508.6,67,1577,73,1646,70C1714.3,67,1783,53,1851,51.7C1920,50,1989,60,2057,53.3C2125.7,47,2194,23,2263,18.3C2331.4,13,2400,27,2469,40C2537.1,53,2606,67,2674,75C2742.9,83,2811,87,2880,86.7C2948.6,87,3017,83,3086,70C3154.3,57,3223,33,3291,25C3360,17,3429,23,3497,21.7C3565.7,20,3634,10,3703,20C3771.4,30,3840,60,3909,63.3C3977.1,67,4046,43,4114,38.3C4182.9,33,4251,47,4320,43.3C4388.6,40,4457,20,4526,21.7C4594.3,23,4663,47,4731,56.7C4800,67,4869,63,4903,61.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
+								d="M0,80L34.3,71.7C68.6,63,137,47,206,35C274.3,23,343,17,411,23.3C480,30,549,50,617,60C685.7,70,754,70,823,61.7C891.4,53,960,37,1029,36.7C1097.1,37,1166,53,1234,60C1302.9,67,1371,63,1440,65C1508.6,67,1577,73,1646,70C1714.3,67,1783,53,1851,51.7C1920,50,1989,60,2057,53.3C2125.7,47,2194,23,2263,18.3C2331.4,13,2400,27,2469,40C2537.1,53,2606,67,2674,75C2742.9,83,2811,87,2880,86.7C2948.6,87,3017,83,3086,70C3154.3,57,3223,33,3291,25C3360,17,3429,23,3497,21.7C3565.7,20,3634,10,3703,20C3771.4,30,3840,60,3909,63.3C3977.1,67,4046,43,4114,38.3C4182.9,33,4251,47,4320,43.3C4388.6,40,4457,20,4526,21.7C4594.3,23,4663,47,4731,56.7C4800,67,4869,63,4903,61.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
 					</path>
 				</svg>
 			</div>
@@ -186,7 +187,7 @@ INTRO SECTION
 							<div class="h3"><i class="fas fa-tasks"></i> Manage construction scope
 							</div>
 							<div id="carouselSlidesOnlyB" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel"
-								pause="hover" data-bs-interval="8000">
+									 pause="hover" data-bs-interval="8000">
 
 								<!-- <div class="carousel-indicators" style="color: black;">
 											<button type="button" data-bs-target="#carouselSlidesOnlyB" data-bs-slide-to="0" class="active"
@@ -205,13 +206,16 @@ INTRO SECTION
 											<div class="col">
 
 												<ul class="list-group list-group-flush pt-2">
-													<li class="list-group-item other-bg" style="color:black; ">
+													<li class="list-group-item other-bg">
+														<i class="fas fa-caret-right"> </i>
 														Scope is automatically extracted from your PDF files.
 													</li>
-													<li class="list-group-item other-bg" style="color: gray;">
+													<li class="list-group-item other-bg">
+														<i class="fas fa-caret-right invisible"> </i>
 														Comments and pictures can be easily added to a project task by field or office users.
 													</li>
-													<li class="list-group-item other-bg" style="color: gray;">
+													<li class="list-group-item other-bg">
+														<i class="fas fa-caret-right invisible"> </i>
 														Update your task status to get accurate progress reports.
 													</li>
 												</ul>
@@ -219,10 +223,9 @@ INTRO SECTION
 												<div class="pt-4">
 													<picture>
 														<source srcset="assets/images/Section-B-1-borders.png.webp" type="image/webp">
-														<source srcset="assets/images/Section-B-1-borders.png" type="image/jpeg">
 														<img src="assets/images/Section-B-1-borders.png" style="max-width: 100%;"
-															alt="example of technical drawing with items of interest highlited by software overlay"
-															loading="lazy">
+																 alt="example of technical drawing with items of interest highlited by software overlay"
+																 loading="lazy">
 													</picture>
 
 												</div>
@@ -237,13 +240,16 @@ INTRO SECTION
 											<div class="col">
 
 												<ul class="list-group list-group-flush pt-2">
-													<li class="list-group-item other-bg" style="color: gray;">
+													<li class="list-group-item other-bg">
+														<i class="fas fa-caret-right invisible"> </i>
 														Scope is automatically extracted from your PDF files.
 													</li>
-													<li class="list-group-item other-bg" style="color: black; ">
+													<li class="list-group-item other-bg">
+														<i class="fas fa-caret-right"> </i>
 														Comments and pictures can be easily added to a project task by field or office users.
 													</li>
-													<li class="list-group-item other-bg" style="color: gray;">
+													<li class="list-group-item other-bg">
+														<i class="fas fa-caret-right invisible"> </i>
 														Update your task status to get accurate progress reports.
 													</li>
 												</ul>
@@ -251,10 +257,9 @@ INTRO SECTION
 												<div class="pt-4">
 													<picture>
 														<source srcset="assets/images/Section-B-2-borders.png.webp" type="image/webp">
-														<source srcset="assets/images/Section-B-2-borders.png" type="image/jpeg">
 														<img src="assets/images/Section-B-2-borders.png" style="max-width: 100%;"
-															alt="example of user changing scope status from in progress to complete"
-															loading="lazy">
+																 alt="example of user changing scope status from in progress to complete"
+																 loading="lazy">
 													</picture>
 												</div>
 
@@ -267,13 +272,16 @@ INTRO SECTION
 										<div class="row">
 											<div class="col">
 												<ul class="list-group list-group-flush pt-2">
-													<li class="list-group-item other-bg" style="color: gray;">
+													<li class="list-group-item other-bg">
+														<i class="fas fa-caret-right invisible"> </i>
 														Scope is automatically extracted from your PDF files.
 													</li>
-													<li class="list-group-item other-bg" style="color: gray;">
+													<li class="list-group-item other-bg">
+														<i class="fas fa-caret-right invisible"> </i>
 														Comments and pictures can be easily added to a project task by field or office users.
 													</li>
-													<li class="list-group-item other-bg" style="color: black; ">
+													<li class="list-group-item other-bg">
+														<i class="fas fa-caret-right"> </i>
 														Update your task status to get accurate progress reports.
 													</li>
 												</ul>
@@ -281,10 +289,8 @@ INTRO SECTION
 												<div class="pt-4">
 													<picture>
 														<source srcset="assets/images/Section-B-3-borders.png.webp" type="image/webp">
-														<source srcset="assets/images/Section-B-3-borders.png" type="image/jpeg">
 														<img src="assets/images/Section-B-3-borders.png" style="max-width: 100%;"
-															alt="example of user using note and upload picture features"
-															loading="lazy">
+																 alt="example of user using note and upload picture features" loading="lazy">
 													</picture>
 												</div>
 
@@ -293,12 +299,12 @@ INTRO SECTION
 									</div>
 
 									<button class="carousel-control-prev" type="button" data-bs-target="#carouselSlidesOnlyB"
-										data-bs-slide="prev">
+													data-bs-slide="prev">
 										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 										<span class="visually-hidden">Previous</span>
 									</button>
 									<button class="carousel-control-next" type="button" data-bs-target="#carouselSlidesOnlyB"
-										data-bs-slide="next">
+													data-bs-slide="next">
 										<span class="carousel-control-next-icon" aria-hidden="true"></span>
 
 										<span class="visually-hidden">Next</span>
@@ -315,7 +321,7 @@ INTRO SECTION
 						we've made this really easy 
 					*** -->
 					<div class="row text-center mt-4 pt-1 bg-primary bg-opacity-10 rounded rounded-3"
-						style="line-height: 2.4rem;">
+							 style="line-height: 2.4rem;">
 						<div class="col mx-auto">
 							<div class="h3">
 								<i class="far fa-check-circle"></i>&nbsp;We've made this really easy
@@ -324,7 +330,7 @@ INTRO SECTION
 							<div style="white-space: nowrap;">
 								<span>
 									<span class="badge rounded-pill bg-primary"
-										style="vertical-align: middle;margin-top: -0.25em;">1</span>
+												style="vertical-align: middle;margin-top: -0.25em;">1</span>
 									Upload your PDFs
 								</span>
 							</div>
@@ -332,7 +338,7 @@ INTRO SECTION
 							<div style="white-space: nowrap;">
 								<span>
 									<span class="badge rounded-pill bg-primary"
-										style="vertical-align: middle;margin-top: -0.25em;">2</span>
+												style="vertical-align: middle;margin-top: -0.25em;">2</span>
 									We process your files
 								</span>
 							</div>
@@ -340,7 +346,7 @@ INTRO SECTION
 							<div style="white-space: nowrap;">
 								<span>
 									<span class="badge rounded-pill bg-primary"
-										style="vertical-align: middle;margin-top: -0.25em;">3</span>
+												style="vertical-align: middle;margin-top: -0.25em;">3</span>
 									Your project is ready!
 								</span>
 							</div>
@@ -368,8 +374,8 @@ INTRO SECTION
 								</li>
 							</ul>
 							<div class="pt-4">
-								<video muted loop controls width="100%" preload="metadata"
-									style="max-height: 50vh; max-width: 1000px;" poster="assets/video/img0003-small.jpeg">
+								<video muted loop controls width="100%" preload="metadata" style="max-height: 50vh; max-width: 1000px;"
+											 poster="assets/video/img0003-small.jpeg">
 
 									<source src="assets/video/HK-2.mp4" type="video/mp4">
 									Sorry, your browser doesn't support embedded videos. <a href="assets/video/HK-2.mp4">Here
@@ -389,7 +395,7 @@ INTRO SECTION
 		SERVICES SECTION
 		*** -->
 	<section id="ServicesSection" class="py-5 px-1 container">
-		<div class="row " style="color: whitesmoke;">
+		<div class="row" style="color: whitesmoke;">
 			<div class="col text-center">
 				<div class="display-6 text-center">
 					<i class="fas fa-cogs"></i> Services
@@ -412,7 +418,7 @@ INTRO SECTION
 			<div class="col">
 
 				<div id="carouselTWO" class="carousel slide carousel-fade" data-bs-ride="carousel" pause="hover"
-					data-bs-interval="8000">
+						 data-bs-interval="8000">
 
 					<!-- <div class="carousel-indicators" style="color: black;">
 							<button type="button" data-bs-target="#carouselTWO" data-bs-slide-to="0" class="active"
@@ -428,8 +434,8 @@ INTRO SECTION
 						<div class="carousel-item active" style="text-align: center;">
 
 							<div class="pt-4">
-								<img src="assets/images/linked1.jpeg" class="rounded rounded-3" style="max-width: 90vw;" loading="lazy" 
-								alt="">
+								<img src="assets/images/linked1.jpeg" class="rounded rounded-3" style="max-width: 90vw;" loading="lazy"
+										 alt="">
 							</div>
 
 							<div class="pt-3">
@@ -438,14 +444,14 @@ INTRO SECTION
 										<i class="fas fa-caret-right"> </i>
 										We recently split a vendor iso book with over 500 drawings into individual files, named with the
 										document number from the drawing. We automated the process and completed the task in less than five
-										hours. Our automation can save you days of repetitive work. </li>
+										hours. Our automation can save you days of repetitive work.
+									</li>
 									<li class="list-group-item bg-white">
 										<i class="fas fa-caret-right invisible"> </i>
-
 										Weld mapping is an important but time-consuming job. Our software simplifies this work by
 										automatically extracting the field welds and overlaying them on the isometrics. With our automation,
-										we
-										are able to reduce weld mapping time by up to 80%. </li>
+										we are able to reduce weld mapping time by up to 80%.
+									</li>
 									<li class="list-group-item bg-white">
 										<i class="fas fa-caret-right invisible"> </i>
 										Whether estimating a job or building a work package, a bill of materials (BOM) is essential. We were
@@ -458,11 +464,11 @@ INTRO SECTION
 							</div>
 						</div>
 
-						<div class="carousel-item " style="text-align: center;">
+						<div class="carousel-item" style="text-align: center;">
 
 							<div class="pt-4">
-								<img src="assets/images/linked2.jpeg" class="rounded rounded-3" style="max-width: 90vw;" loading="lazy" 
-								alt="">
+								<img src="assets/images/linked2.jpeg" class="rounded rounded-3" style="max-width: 90vw;" loading="lazy"
+										 alt="">
 							</div>
 
 							<div class="pt-3">
@@ -471,13 +477,14 @@ INTRO SECTION
 										<i class="fas fa-caret-right invisible"> </i>
 										We recently split a vendor iso book with over 500 drawings into individual files, named with the
 										document number from the drawing. We automated the process and completed the task in less than five
-										hours. Our automation can save you days of repetitive work. </li>
+										hours. Our automation can save you days of repetitive work.
+									</li>
 									<li class="list-group-item bg-white">
 										<i class="fas fa-caret-right"> </i>
 										Weld mapping is an important but time-consuming job. Our software simplifies this work by
 										automatically extracting the field welds and overlaying them on the isometrics. With our automation,
-										we
-										are able to reduce weld mapping time by up to 80%. </li>
+										we are able to reduce weld mapping time by up to 80%.
+									</li>
 									<li class="list-group-item bg-white">
 										<i class="fas fa-caret-right invisible"> </i>
 										Whether estimating a job or building a work package, a bill of materials (BOM) is essential. We were
@@ -491,11 +498,11 @@ INTRO SECTION
 
 						</div>
 
-						<div class="carousel-item " style="text-align: center;">
+						<div class="carousel-item" style="text-align: center;">
 
 							<div class="pt-4">
-								<img src="assets/images/linked3.png" class="rounded rounded-3" style="max-width: 90vw;" loading="lazy" 
-								alt="">
+								<img src="assets/images/linked3.png" class="rounded rounded-3" style="max-width: 90vw;" loading="lazy"
+										 alt="">
 							</div>
 
 							<div class="pt-3">
@@ -504,13 +511,14 @@ INTRO SECTION
 										<i class="fas fa-caret-right invisible"> </i>
 										We recently split a vendor iso book with over 500 drawings into individual files, named with the
 										document number from the drawing. We automated the process and completed the task in less than five
-										hours. Our automation can save you days of repetitive work. </li>
+										hours. Our automation can save you days of repetitive work.
+									</li>
 									<li class="list-group-item bg-white">
 										<i class="fas fa-caret-right invisible"> </i>
 										Weld mapping is an important but time-consuming job. Our software simplifies this work by
 										automatically extracting the field welds and overlaying them on the isometrics. With our automation,
-										we
-										are able to reduce weld mapping time by up to 80%. </li>
+										we are able to reduce weld mapping time by up to 80%.
+									</li>
 									<li class="list-group-item bg-white">
 										<i class="fas fa-caret-right"> </i>
 										Whether estimating a job or building a work package, a bill of materials (BOM) is essential. We were
@@ -553,7 +561,7 @@ INTRO SECTION
 					</linearGradient>
 				</defs>
 				<path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-2)"
-					d="M0,80L34.3,71.7C68.6,63,137,47,206,35C274.3,23,343,17,411,23.3C480,30,549,50,617,60C685.7,70,754,70,823,61.7C891.4,53,960,37,1029,36.7C1097.1,37,1166,53,1234,60C1302.9,67,1371,63,1440,65C1508.6,67,1577,73,1646,70C1714.3,67,1783,53,1851,51.7C1920,50,1989,60,2057,53.3C2125.7,47,2194,23,2263,18.3C2331.4,13,2400,27,2469,40C2537.1,53,2606,67,2674,75C2742.9,83,2811,87,2880,86.7C2948.6,87,3017,83,3086,70C3154.3,57,3223,33,3291,25C3360,17,3429,23,3497,21.7C3565.7,20,3634,10,3703,20C3771.4,30,3840,60,3909,63.3C3977.1,67,4046,43,4114,38.3C4182.9,33,4251,47,4320,43.3C4388.6,40,4457,20,4526,21.7C4594.3,23,4663,47,4731,56.7C4800,67,4869,63,4903,61.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
+							d="M0,80L34.3,71.7C68.6,63,137,47,206,35C274.3,23,343,17,411,23.3C480,30,549,50,617,60C685.7,70,754,70,823,61.7C891.4,53,960,37,1029,36.7C1097.1,37,1166,53,1234,60C1302.9,67,1371,63,1440,65C1508.6,67,1577,73,1646,70C1714.3,67,1783,53,1851,51.7C1920,50,1989,60,2057,53.3C2125.7,47,2194,23,2263,18.3C2331.4,13,2400,27,2469,40C2537.1,53,2606,67,2674,75C2742.9,83,2811,87,2880,86.7C2948.6,87,3017,83,3086,70C3154.3,57,3223,33,3291,25C3360,17,3429,23,3497,21.7C3565.7,20,3634,10,3703,20C3771.4,30,3840,60,3909,63.3C3977.1,67,4046,43,4114,38.3C4182.9,33,4251,47,4320,43.3C4388.6,40,4457,20,4526,21.7C4594.3,23,4663,47,4731,56.7C4800,67,4869,63,4903,61.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
 				</path>
 			</svg>
 		</div>
@@ -572,7 +580,7 @@ INTRO SECTION
 					</div>
 					<div class="py-2">
 						<a href="mailto:info@howardkind.com" target="_blank" rel="noopener noreferrer"
-							class="link-dark">info@howardkind.com</a>
+							 class="link-dark">info@howardkind.com</a>
 					</div>
 					<div>
 						<a href="tel:1-800-369-3763" class="link-dark">1-800-369-3763</a>
@@ -634,7 +642,7 @@ INTRO SECTION
 			<div class="row align-items-center">
 				<div class="col">
 					<img src="./assets/images/HK logo light.svg" onclick="toTop();" style="height:30px; max-width: 70vw;"
-						alt="logo" class="btn button p-0 m-0 rounded-0" loading="lazy">
+							 alt="logo" class="btn button p-0 m-0 rounded-0" loading="lazy">
 
 				</div>
 				<div class="col-auto align-baseline">
@@ -656,7 +664,8 @@ INTRO SECTION
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+				integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+				crossorigin="anonymous"></script>
 
 
 
@@ -665,39 +674,10 @@ INTRO SECTION
 <script defer src="assets/js/smoothscroll.min.js"></script>
 <script>
 
-	function toSoftware() {
-
+	function smoothScroolTo(id) {
 		document.getElementById('navbarNav').classList.remove('show');
 
-		const SoftwareSection = document.getElementById('SoftwareSection');
-		const NavHeader = document.getElementById('NavHeader');
-
-		let y1 = SoftwareSection.getBoundingClientRect().top;
-		let y2 = NavHeader.getBoundingClientRect().height;
-		let y = y1 - y2;
-
-		window.scrollBy({ top: y, behavior: 'smooth' });
-	}
-
-	function toServices() {
-
-		document.getElementById('navbarNav').classList.remove('show');
-
-		const SoftwareSection = document.getElementById('ServicesSection');
-		const NavHeader = document.getElementById('NavHeader');
-
-		let y1 = SoftwareSection.getBoundingClientRect().top;
-		let y2 = NavHeader.getBoundingClientRect().height;
-		let y = y1 - y2 + 10;
-
-		window.scrollBy({ top: y, behavior: 'smooth' });
-	}
-
-	function toContact() {
-
-		document.getElementById('navbarNav').classList.remove('show');
-
-		const SoftwareSection = document.getElementById('ContactSection');
+		const SoftwareSection = document.getElementById(id);
 		const NavHeader = document.getElementById('NavHeader');
 
 		let y1 = SoftwareSection.getBoundingClientRect().top;
