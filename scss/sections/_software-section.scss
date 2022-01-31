@@ -1,0 +1,13 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.section-software
+{
+	background-color: white;
+  color: $black-offset;
+}
+
+.header
+{
+	font-variant-caps: small-caps ;
+}

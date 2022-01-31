@@ -1,0 +1,15 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.section-contact {
+	background-color: white;
+	color: $black-offset;
+
+	text-align: center;
+	transform: translateY(-4px);
+	min-height: 90;
+}
+
+.section-contact a {
+	user-select: text;
+}

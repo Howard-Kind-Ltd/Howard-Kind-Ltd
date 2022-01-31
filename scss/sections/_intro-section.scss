@@ -1,24 +1,26 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
 
-body {
-  @include gradient;
+.section-intro {
+  background: url("../images/stock/614129336-1920-50percent.jpg"), $secondary;
+  /* Center and scale the image nicely */
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  
+
+  /* Full height */
+  min-height: 100vh;
+
+  width: auto;
+
+
+  margin: 0;
+  padding: 0;
 }
 
-.grad-bg {
-  @include gradient;
-  color: $white-offset;
-}
-
-.other-bg
+.section-intro a, .section-intro button, .section-intro a:enabled, .section-intro button:enabled
 {
-  background-color: whitesmoke;
-  color: $black-offset;
-}
-
-.accordion
-{
-  li{
-    color: black;
-  }
+  background-color: rgba(0, 0, 255, 0.35);
+  color: white;
 }

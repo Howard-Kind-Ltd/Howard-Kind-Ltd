@@ -11034,8 +11034,75 @@ textarea.form-control-lg {
   font-weight: 400;
 }
 
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition-duration: 0.3s;
+  opacity: 0.9;
+}
+
+.navbar:hover {
+  opacity: 1;
+}
+
+.section-intro {
+  background: url("../images/stock/614129336-1920-50percent.jpg"), #3134d8;
+  /* Center and scale the image nicely */
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  /* Full height */
+  min-height: 100vh;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.section-intro a, .section-intro button, .section-intro a:enabled, .section-intro button:enabled {
+  background-color: rgba(0, 0, 255, 0.35);
+  color: white;
+}
+
+.section-software {
+  background-color: white;
+  color: #2f2f41;
+}
+
+.header {
+  font-variant-caps: small-caps;
+}
+
+.section-contact {
+  background-color: white;
+  color: #2f2f41;
+  text-align: center;
+  transform: translateY(-4px);
+  min-height: 90;
+}
+
+.section-contact a {
+  user-select: text;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background: linear-gradient(to right, #041146, #3134d8);
+  color: #fff6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .grad-bg {
@@ -11043,13 +11110,9 @@ body {
   color: #fff6f8;
 }
 
-.other-bg {
-  background-color: whitesmoke;
-  color: #2f2f41;
-}
-
-.accordion li {
+.list-group-item {
   color: black;
+  background-color: whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */

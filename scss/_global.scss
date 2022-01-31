@@ -1,0 +1,36 @@
+@use "./custom" as *;
+@use "./components/mixins" as *;
+
+html {
+	width: 100%;
+	height: 100%;
+
+  // scroll-snap-type:y proximity;
+  // scroll-padding: 80px;
+}
+
+body {
+	@include gradient;
+	color: $white-offset;
+
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.grad-bg {
+  @include gradient;
+  color: $white-offset;
+}
+
+.list-group-item {
+  color: black;
+  background-color: whitesmoke;
+}

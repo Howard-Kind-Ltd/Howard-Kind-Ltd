@@ -7,12 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Howard Kind</title>
 
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<link rel="stylesheet" href="./assets/css/fontawesome.css">
+	<!-- <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/fontawesome.css"> -->
 
-	<!-- ACCORDION DOES NOT OPEN SMOOTHLY AFTER CSSPURGE -->
-	<!-- <link rel="stylesheet" href="./assets/css-min/style.css">
-	<link rel="stylesheet" href="./assets/css-min/fontawesome.css"> -->
+	<!-- 
+		ACCORDION DOES NOT OPEN SMOOTHLY AFTER CSSPURGE 
+	  ** USE FILTERS TO FIX**
+		https://github.com/FullHuman/purgecss/issues/104
+	-->
+	<link rel="stylesheet" href="./assets/css-min/style.css">
+	<link rel="stylesheet" href="./assets/css-min/fontawesome.css">
 
 	<!-- favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
@@ -27,7 +31,7 @@
 
 	<!-- SEO -->
 	<meta name="description"
-				content="We faciliate construction. Our vision is to reduce & automate time-consuming processes that chip away your bottom line." />
+				content="We facilitate construction. Our vision is to reduce & automate time-consuming processes that chip away your bottom line." />
 
 	<!-- OPEN GRAPH -->
 	<meta property="og:title" content="Howard Kind">
@@ -47,16 +51,64 @@
 
 		gtag('config', 'UA-162114635-1');
 	</script>
+	<!-- end Google Analytics -->
 
 </head>
 
-<body class="container-fluid grad-bg">
+<body>
+
+	<!-- ***
+INTRO SECTION
+*** -->
+	<div class="section-intro text-center">
+		<div class="row" style="min-height: 100vh; max-width: 100vw;">
+			<div class=" mx-auto my-auto pb-4">
+
+				<picture>
+					<img src="./assets/images/HowardKind-horizontal.svg" class="img-fluid" style="height:150px;"
+							 alt="Howard Kind logo">
+				</picture>
+
+				<div>
+					<span class="p-2 display-5 fw-bold" style="color:black;;line-height: 160%;">
+						Construction solutions:
+					</span>
+				</div>
+
+				<div class="row pt-2 justify-content-center">
+					<div class="col-lg-auto pt-1" style="text-align: center;">
+						<a class="btn btn-primary btn-lg border border-1 fw-light button_splash_page"
+										onclick="smoothScrollTo('SoftwareSection')">
+							<span class="fas fa-laptop" style="width: 25px;height: 20px;"></span>
+							Document Platform</a>
+					</div>
+					<div class="col-lg-auto pt-1" style="text-align: center;">
+						<a class="btn btn-primary btn-lg border border-1 fw-light button_splash_page"
+										onclick="smoothScrollTo('ServicesSection')">
+							<span class="fas fa-cogs" style="width: 25px;height: 20px;"></span>
+							Value-added services</a>
+					</div>
+					<div class="col-lg-auto pt-1" style="text-align: center;">
+						<a class=" btn btn-primary btn-lg border border-1 fw-light button_splash_page"
+							 href="https://app.howardkind.com">
+							<span class="fas fa-key" style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Login</a>
+					</div>
+					<div class="col-lg-auto pt-1" style="text-align: center;">
+						<a class="btn btn-primary btn-lg border border-1 fw-light button_splash_page"
+										onclick="smoothScrollTo('ContactSection');">
+							<span class="fas fa-mail-bulk" style="width: 25px;height: 20px;"></span>
+							Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- ***
 		NAVBAR 
 	*** -->
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark menu" id="NavHeader">
-		<div class="container" id="HeaderSection">
+	<nav class="navbar navbar-expand-lg navbar-dark menu py-0 my-0" id="NavHeader">
+		<div class="container-xl" id="HeaderSection">
 			<a class="navbar-brand" href="#">
 				<img src="./assets/images/HowardKind-horizontal white.svg" class="img-fluid"
 						 style="height:50px; max-width: 60vw;" alt="Howard Kind logo">
@@ -68,24 +120,34 @@
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				<ul class="navbar-nav">
 
-					<li class="nav-item ms-auto my-3" onclick="smoothScroolTo('SoftwareSection')">
-						<div class="nav-link btn" style="color:whitesmoke" id="SoftwareButton"><span class="fas fa-laptop"
-										style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Software</div>
+					<li class="nav-item ms-auto my-3" onclick="smoothScrollTo('SoftwareSection')">
+						<div class="nav-link btn btn-outline-primary p-1" style="border:1px white solid; color:whitesmoke"
+								 id="SoftwareButton">
+							<span class="fas fa-laptop" style="width: 20px;width: 16px;"></span>
+							&nbsp;&nbsp;Document Platform
+						</div>
 					</li>
 
-					<li class="nav-item ms-auto my-3" onclick="smoothScroolTo('ServicesSection');">
-						<div class="nav-link btn" style="color:whitesmoke" id="ServicesButton"><span class="fas fa-cogs"
-										style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Services</div>
+					<li class="nav-item ms-auto my-3" onclick="smoothScrollTo('ServicesSection');">
+						<div class="nav-link btn btn-outline-primary p-1" style="border:1px white solid; color:whitesmoke"
+								 id="ServicesButton">
+							<span class="fas fa-cogs" style="width: 20px;width: 16px;"></span>
+							&nbsp;&nbsp;Value-added Services
+						</div>
 					</li>
 
 					<li class="nav-item ms-auto my-3">
-						<a class="nav-link btn" href="https://app.howardkind.com"><span class="fas fa-key"
-										style="width: 20px;width: 16px;"></span> Login</a>
+						<a class="nav-link btn btn-outline-primary p-1" style="border:1px white solid;"
+							 href="https://app.howardkind.com">
+							<span class="fas fa-key" style="width: 20px;width: 16px;"></span> Login</a>
 					</li>
 
-					<li class="nav-item ms-auto my-3" onclick="smoothScroolTo('ContactSection');">
-						<div class="nav-link btn" style="color:whitesmoke" id="ContactButton"><span class="fas fa-mail-bulk"
-										style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Contact</div>
+					<li class="nav-item ms-auto my-3" onclick="smoothScrollTo('ContactSection');">
+						<div class="nav-link btn btn-outline-primary p-1" style="border:1px white solid; color:whitesmoke"
+								 id="ContactButton">
+							<span class="fas fa-mail-bulk" style="width: 20px;width: 16px;"></span>
+							&nbsp;&nbsp;Contact
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -93,470 +155,220 @@
 	</nav>
 
 	<!-- ***
-INTRO SECTION
-*** -->
-	<section class="container">
-		<div class="row" style="min-height: 100vh; max-width: 100vw">
-			<div class="col-lg mx-auto my-auto pb-4">
-				<div style="text-align: center;">
-					<div class="pt-5"></div>
-					<div class="pt-5 display-5 fw-bold">
-
-						We facilitate construction.
-
-						<div class="pt-5 display-5">
-							Our vision is to reduce & automate time-consuming processes that chip away
-							your&nbsp;bottom&nbsp;line.
-						</div>
-					</div>
-				</div>
-				<div class="row pt-5 justify-content-center">
-					<div class="col display-6" style="text-align: center;">
-						Learn more:
-					</div>
-					<div class="row g-2 justify-content-center">
-						<div class="col-md-auto" style="text-align: center;">
-							<button class="btn btn-primary btn-lg" onclick="smoothScroolTo('SoftwareSection')"><span
-											class="fas fa-laptop" style="width: 25px;height: 20px;"></span>
-								Software</button>
-						</div>
-						<div class="col-md-auto" style="text-align: center;">
-							<button class="btn btn-primary btn-lg" onclick="smoothScroolTo('ServicesSection')"><span
-											class="fas fa-cogs" style="width: 25px;height: 20px;"></span>
-								Services</button>
-						</div>
-						<div class="col-md-auto" style="text-align: center;">
-							<button class="btn btn-primary btn-lg" onclick="smoothScroolTo('ContactSection');"><span
-											class="fas fa-mail-bulk" style="width: 25px;height: 20px;"></span>
-								Contact</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ***
-		BLUE TO WHITE 
-	*** -->
-	<section>
-		<div class="row grad-bg">
-			<div class="col p-0 mx-n2">
-				<svg id="wave" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-					<defs>
-						<linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-							<stop stop-color="whitesmoke" offset="0%"></stop>
-							<stop stop-color="whitesmoke" offset="100%"></stop>
-						</linearGradient>
-					</defs>
-					<path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-								d="M0,80L34.3,71.7C68.6,63,137,47,206,35C274.3,23,343,17,411,23.3C480,30,549,50,617,60C685.7,70,754,70,823,61.7C891.4,53,960,37,1029,36.7C1097.1,37,1166,53,1234,60C1302.9,67,1371,63,1440,65C1508.6,67,1577,73,1646,70C1714.3,67,1783,53,1851,51.7C1920,50,1989,60,2057,53.3C2125.7,47,2194,23,2263,18.3C2331.4,13,2400,27,2469,40C2537.1,53,2606,67,2674,75C2742.9,83,2811,87,2880,86.7C2948.6,87,3017,83,3086,70C3154.3,57,3223,33,3291,25C3360,17,3429,23,3497,21.7C3565.7,20,3634,10,3703,20C3771.4,30,3840,60,3909,63.3C3977.1,67,4046,43,4114,38.3C4182.9,33,4251,47,4320,43.3C4388.6,40,4457,20,4526,21.7C4594.3,23,4663,47,4731,56.7C4800,67,4869,63,4903,61.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
-					</path>
-				</svg>
-			</div>
-		</div>
-	</section>
-
-	<!-- ***
 		SOFTWARE SECTION
 		*** -->
-	<section id="SoftwareSection" style="transform: translateY(-2px);">
+	<section id="SoftwareSection" class="section-software text-center px-0 mx-auto pt-5" >
+		<section class="container-md p-0">
 
-		<div class="row other-bg">
-			<div class="col">
-				<section class="container-md p-0">
-					<div class="row">
-						<div class="col-md mx-auto p-2 py-4">
+			<div class=" display-6">
+				<i class="fas fa-laptop"></i>
+				Document Platform
+			</div>
 
-							<div class="text-center display-6">
-								<i class="fas fa-laptop"></i>
-								Software
-							</div>
+			<div class="fs-4 pt-4">
+				<p>Transform your PDFs into an intuitive web app, that doesn't require advanced computer skills to
+					operate.</p>
+				<p>Empower your <b>field</b> and <b>office</b> staff with the information they need.</p>
+			</div>
 
-							<div class="fs-4 py-4 text-center">
-								Transform your PDFs into an intuitive web app, that doesn't require advanced computer skills to
-								operate.
-							</div>
+			<div class="text-center py-2" style="background-color: whitesmoke;">
 
-						</div>
-					</div>
+				<div class="h3 header"><i class="fas fa-search"></i> Navigate drawings faster
+				</div>
 
-					<div class="row justify-content-md-center py-5">
+				<picture>
+					<img src="assets/video/HK-2.gif" style="width:640px;max-width: 100%; height: auto;"
+							 alt="Animation of easy search and navigation of documents">
+				</picture>
 
-						<div class="col text-center" style="max-width: 1000px;">
-							<div class="h3"><i class="fas fa-tasks"></i> Manage construction scope
-							</div>
-							<div id="carouselSlidesOnlyB" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel"
-									 pause="hover" data-bs-interval="8000">
+			</div>
 
-								<!-- <div class="carousel-indicators" style="color: black;">
-											<button type="button" data-bs-target="#carouselSlidesOnlyB" data-bs-slide-to="0" class="active"
-												aria-current="true" aria-label="Slide 1"></button>
-											<button type="button" data-bs-target="#carouselSlidesOnlyB" data-bs-slide-to="1"
-												aria-label="Slide 2"></button>
-											<button type="button" data-bs-target="#carouselSlidesOnlyB" data-bs-slide-to="2"
-												aria-label="Slide 3"></button>
-										</div> -->
+			<div class=" justify-content-md-center py-2 mt-5 text-center" style="background-color: whitesmoke;">
+				<div class="h3 header"><i class="fas fa-tasks"></i> Manage construction scope
+				</div>
+				<div id="carouselSlidesOnlyB" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel"
+						 pause="hover" data-bs-interval="8000">
 
-								<div class="carousel-inner">
-
-									<div class="carousel-item active" style="text-align: center;">
-
-										<div class="row">
-											<div class="col">
-
-												<ul class="list-group list-group-flush pt-2">
-													<li class="list-group-item other-bg">
-														<i class="fas fa-caret-right"> </i>
-														Scope is automatically extracted from your PDF files.
-													</li>
-													<li class="list-group-item other-bg">
-														<i class="fas fa-caret-right invisible"> </i>
-														Comments and pictures can be easily added to a project task by field or office users.
-													</li>
-													<li class="list-group-item other-bg">
-														<i class="fas fa-caret-right invisible"> </i>
-														Update your task status to get accurate progress reports.
-													</li>
-												</ul>
-
-												<div class="pt-4">
-													<picture>
-														<source srcset="assets/images/Section-B-1-borders.png.webp" type="image/webp">
-														<img src="assets/images/Section-B-1-borders.png" style="max-width: 100%;"
-																 alt="example of technical drawing with items of interest highlited by software overlay">
-													</picture>
-
-												</div>
-
-											</div>
-										</div>
-									</div>
-
-									<div class="carousel-item" style="text-align: center;">
-
-										<div class="row">
-											<div class="col">
-
-												<ul class="list-group list-group-flush pt-2">
-													<li class="list-group-item other-bg">
-														<i class="fas fa-caret-right invisible"> </i>
-														Scope is automatically extracted from your PDF files.
-													</li>
-													<li class="list-group-item other-bg">
-														<i class="fas fa-caret-right"> </i>
-														Comments and pictures can be easily added to a project task by field or office users.
-													</li>
-													<li class="list-group-item other-bg">
-														<i class="fas fa-caret-right invisible"> </i>
-														Update your task status to get accurate progress reports.
-													</li>
-												</ul>
-
-												<div class="pt-4">
-													<picture>
-														<source srcset="assets/images/Section-B-2-borders.png.webp" type="image/webp">
-														<img src="assets/images/Section-B-2-borders.png" style="max-width: 100%" alt="example of user changing scope status from in progress to complete"
-																 loading="lazy">
-													</picture>
-												</div>
-
-											</div>
-										</div>
-									</div>
-
-									<div class="carousel-item" style="text-align: center;">
-
-										<div class="row">
-											<div class="col">
-												<ul class="list-group list-group-flush pt-2">
-													<li class="list-group-item other-bg">
-														<i class="fas fa-caret-right invisible"> </i>
-														Scope is automatically extracted from your PDF files.
-													</li>
-													<li class="list-group-item other-bg">
-														<i class="fas fa-caret-right invisible"> </i>
-														Comments and pictures can be easily added to a project task by field or office users.
-													</li>
-													<li class="list-group-item other-bg">
-														<i class="fas fa-caret-right"> </i>
-														Update your task status to get accurate progress reports.
-													</li>
-												</ul>
-
-												<div class="pt-4">
-													<picture>
-														<source srcset="assets/images/Section-B-3-borders.png.webp" type="image/webp">
-														<img src="assets/images/Section-B-3-borders.png" style="max-width: 100%;" alt="example of user using note and upload picture features"
-																 loading="lazy">
-													</picture>
-												</div>
-
-											</div>
-										</div>
-									</div>
-
-									<button class="carousel-control-prev" type="button" data-bs-target="#carouselSlidesOnlyB"
-													data-bs-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-										<span class="visually-hidden">Previous</span>
-									</button>
-									<button class="carousel-control-next" type="button" data-bs-target="#carouselSlidesOnlyB"
-													data-bs-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-										<span class="visually-hidden">Next</span>
-									</button>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-
-
-					<!-- ***
-						we've made this really easy 
-					*** -->
-					<div class="row text-center mt-4 pt-1 bg-primary bg-opacity-10 rounded rounded-3"
-							 style="line-height: 2.4rem;">
-						<div class="col mx-auto">
-							<div class="h3">
-								<i class="far fa-check-circle"></i>&nbsp;We've made this really easy
-							</div>
-
-							<div style="white-space: nowrap;">
-								<span>
-									<span class="badge rounded-pill bg-primary"
-												style="vertical-align: middle;margin-top: -0.25em;">1</span>
-									Upload your PDFs
-								</span>
-							</div>
-
-							<div style="white-space: nowrap;">
-								<span>
-									<span class="badge rounded-pill bg-primary"
-												style="vertical-align: middle;margin-top: -0.25em;">2</span>
-									We process your files
-								</span>
-							</div>
-
-							<div style="white-space: nowrap;">
-								<span>
-									<span class="badge rounded-pill bg-primary"
-												style="vertical-align: middle;margin-top: -0.25em;">3</span>
-									Your project is ready!
-								</span>
-							</div>
-						</div>
-					</div>
-					<!-- ***
-						find drawings faster 
-					*** -->
-					<div class="row justify-content-md-center py-5" style="flex-direction: row-reverse;">
-
-						<div class="col my-auto text-center py-5" style="max-width: 1000px;">
-
-							<div class="h3"><i class="fas fa-search"></i> Find drawings faster
-							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item other-bg p-1">
-									Project documents are automatically linked together. Follow the
-									inter-drawing links (continuations) to see the complete picture.
+					<div class="carousel-inner">
+						<div class="carousel-item active" style="text-align: center;">
+							<ul class="list-group list-group-flush pt-2">
+								<li class="list-group-item">
+									<i class="fas fa-caret-right"> </i>
+									Scope is <b>automatically</b> extracted from your PDF files.
 								</li>
-								<li class="list-group-item other-bg p-1">
-									Search for text in your documents using keywords such as drawing titles and equipment tags.
+								<li class="list-group-item">
+									<i class="fas fa-caret-right invisible"> </i>
+									Comments and pictures can be easily added to a project task by field or office users.
 								</li>
-								<li class="list-group-item other-bg p-1">
-									Find related documents with a single click.
+								<li class="list-group-item">
+									<i class="fas fa-caret-right invisible"> </i>
+									Update your task status to get accurate progress reports.
 								</li>
 							</ul>
-							<div class="pt-4">
-								<video muted loop controls width="100%" preload="metadata" style="max-height: 50vh; max-width: 1000px;"
-											 poster="assets/video/img0003-small.jpeg">
-
-									<source src="assets/video/HK-2.mp4" type="video/mp4">
-									Sorry, your browser doesn't support embedded videos. <a href="assets/video/HK-2.mp4">Here
-										is a link instead.</a>
-								</video>
+							<div class="pt-4 px-0 mx-0">
+								<picture>
+									<source srcset="assets/images/Section-B-1-borders.png.webp" type="image/webp">
+									<img src="assets/images/Section-B-1-borders.png" style="width:740px; max-width: 100%; height: auto;"
+											 alt="example of technical drawing with items of interest highlighted by software overlay">
+								</picture>
 							</div>
 						</div>
-					</div>
 
-				</section>
+						<div class="carousel-item" style="text-align: center;">
+							<ul class="list-group list-group-flush pt-2">
+								<li class="list-group-item">
+									<i class="fas fa-caret-right invisible"> </i>
+									Scope is <b>automatically</b> extracted from your PDF files.
+								</li>
+								<li class="list-group-item">
+									<i class="fas fa-caret-right"> </i>
+									Comments and pictures can be easily added to a project task by field or office users.
+								</li>
+								<li class="list-group-item">
+									<i class="fas fa-caret-right invisible"> </i>
+									Update your task status to get accurate progress reports.
+								</li>
+							</ul>
+
+							<div class="pt-4">
+								<picture>
+									<source srcset="assets/images/Section-B-2-borders.png.webp" type="image/webp">
+									<img src="assets/images/Section-B-2-borders.png" style="width:740px; max-width: 100%;"
+											 alt="example of user changing scope status from in progress to complete" loading="lazy">
+								</picture>
+							</div>
+
+						</div>
+
+						<div class="carousel-item" style="text-align: center;">
+							<ul class="list-group list-group-flush pt-2">
+								<li class="list-group-item">
+									<i class="fas fa-caret-right invisible"> </i>
+									Scope is <b>automatically</b> extracted from your PDF files.
+								</li>
+								<li class="list-group-item">
+									<i class="fas fa-caret-right invisible"> </i>
+									Comments and pictures can be easily added to a project task by field or office users.
+								</li>
+								<li class="list-group-item">
+									<i class="fas fa-caret-right"> </i>
+									Update your task status to get accurate progress reports.
+								</li>
+							</ul>
+
+							<div class="pt-4">
+								<picture>
+									<source srcset="assets/images/Section-B-3-borders.png.webp" type="image/webp">
+									<img src="assets/images/Section-B-3-borders.png" style="width:740px; max-width: 100%;"
+											 alt="example of user using note and upload picture features" loading="lazy">
+								</picture>
+							</div>
+
+						</div>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselSlidesOnlyB"
+										data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselSlidesOnlyB"
+										data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
 			</div>
-		</div>
+
+			<!-- ***
+						we've made this really easy 
+					*** -->
+			<div class="text-center my-5 bg-primary bg-opacity-10 rounded rounded-3 py-3"
+					 style="line-height: 2.4rem;">
+				<div class="h3">
+					<i class="far fa-check-circle"></i>&nbsp;We've made this really easy
+				</div>
+
+				<div style="white-space: nowrap;">
+					<span>
+						<span class="badge rounded-pill bg-primary" style="vertical-align: middle;margin-top: -0.25em;">1</span>
+						Upload your PDFs
+					</span>
+				</div>
+
+				<div style="white-space: nowrap;">
+					<span>
+						<span class="badge rounded-pill bg-primary" style="vertical-align: middle;margin-top: -0.25em;">2</span>
+						We process your files
+					</span>
+				</div>
+
+				<div style="white-space: nowrap;">
+					<span>
+						<span class="badge rounded-pill bg-primary" style="vertical-align: middle;margin-top: -0.25em;">3</span>
+						Your project is ready!
+					</span>
+				</div>
+
+				<div class="ms-auto mt-2" onclick="smoothScrollTo('ContactSection');">
+					<button class="btn btn-primary btn-lg" style="color:white; border: 1px black solid;" id="ContactButton2">
+						<span class="fas fa-mail-bulk" style="width: 20px;width: 16px;"></span>&nbsp;&nbsp;Contact us for a demo
+					</button>
+				</div>
+			</div>
+
+
+			<div>&nbsp;</div>
+
+		</section>
 	</section>
 
 
 	<!-- ***
 		SERVICES SECTION
 		*** -->
-	<section id="ServicesSection" class="py-5 px-1 container">
-		<div class="row" style="color: whitesmoke;">
-			<div class="col text-center">
-				<div class="display-6 text-center">
-					<i class="fas fa-cogs"></i> Services
+	<section id="ServicesSection" class="pb-5 pt-5 px-0 container-fluid text-center grad-bg">
 
-				</div>
-				<div style="line-height: 150%;" class="fs-4 py-4">
-					If it exists on a drawing, we have a process to assemble the information you require.
-				</div>
-
-				<div style="line-height: 200%;"><i class="fas fa-file-pdf"></i> We extract data from PDF documents
-					(e.g.: bill of materials, scope take-offs and quantities)
-					and deliver in an Excel-compatible format.</div>
-				<div style="line-height: 200%;"><i class="fas fa-folder"></i> We automate repetitive tasks such as
-					sorting engineering documents by systems, commodities, and area.
-				</div>
-
-			</div>
+		<div class="display-6">
+			<i class="fas fa-cogs"></i> Value-added Services
 		</div>
-		<div class="row bg-white mt-5 py-2 bg-opacity-10 rounded rounded-3">
-			<div class="col">
 
-				<div id="carouselTWO" class="carousel slide carousel-fade" data-bs-ride="carousel" pause="hover"
-						 data-bs-interval="8000">
+		<div style="line-height: 150%;" class="fs-4 py-4">
+			<p>Our vision is to reduce & automate time-consuming processes that chip away your bottom line. </p>
+			<p>If it exists on a drawing, we have a process to assemble the information you require.</p>
+		</div>
 
-					<!-- <div class="carousel-indicators" style="color: black;">
-							<button type="button" data-bs-target="#carouselTWO" data-bs-slide-to="0" class="active"
-								aria-current="true" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#carouselTWO" data-bs-slide-to="1"
-								aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#carouselTWO" data-bs-slide-to="2"
-								aria-label="Slide 3"></button>
-						</div> -->
+		<div style="line-height: 200%;"><i class="fas fa-file-pdf"></i> We extract data from PDF documents
+			(e.g.: bill of materials, scope take-offs and quantities)
+			and deliver in an Excel-compatible format.
+		</div>
 
-					<div class="carousel-inner">
+		<div style="line-height: 200%;"><i class="fas fa-folder"></i> We automate repetitive tasks such as
+			sorting engineering documents by systems, commodities, and area.
+		</div>
 
-						<div class="carousel-item active" style="text-align: center;">
-
-							<div class="pt-4">
-								<img src="assets/images/linked1.jpeg" class="rounded rounded-3"
-										 style="max-width: 100%;" alt="">
-							</div>
-
-							<div class="pt-3">
-								<ul class="list-group list-group-flush pt-1 rounded rounded-3">
-									<li class="list-group-item bg-white">
-										<i class="fas fa-caret-right"> </i>
-										We recently split a vendor iso book with over 500 drawings into individual files, named with the
-										document number from the drawing. We automated the process and completed the task in less than five
-										hours. Our automation can save you days of repetitive work.
-									</li>
-									<li class="list-group-item bg-white">
-										<i class="fas fa-caret-right invisible"> </i>
-										Weld mapping is an important but time-consuming job. Our software simplifies this work by
-										automatically extracting the field welds and overlaying them on the isometrics. With our automation,
-										we are able to reduce weld mapping time by up to 80%.
-									</li>
-									<li class="list-group-item bg-white">
-										<i class="fas fa-caret-right invisible"> </i>
-										Whether estimating a job or building a work package, a bill of materials (BOM) is essential. We were
-										given an opportunity to extract the BOM from over a 1000 iso’s; both assembly and field. To complete
-										this task, we used our automated processes to extract the BOM and provided an excel copy. Because
-										the extraction was automated, it was completed in hours with an extremely high degree of accuracy.
-										No matter your discipline, our processes can take days out of your planning or estimating cycles.
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="carousel-item" style="text-align: center;">
-
-							<div class="pt-4">
-								<img src="assets/images/linked2.jpeg" class="rounded rounded-3"
-										 style="max-width: 100%;" loading="lazy" alt="">
-							</div>
-
-							<div class="pt-3">
-								<ul class="list-group list-group-flush pt-1 rounded rounded-3">
-									<li class="list-group-item bg-white">
-										<i class="fas fa-caret-right invisible"> </i>
-										We recently split a vendor iso book with over 500 drawings into individual files, named with the
-										document number from the drawing. We automated the process and completed the task in less than five
-										hours. Our automation can save you days of repetitive work.
-									</li>
-									<li class="list-group-item bg-white">
-										<i class="fas fa-caret-right"> </i>
-										Weld mapping is an important but time-consuming job. Our software simplifies this work by
-										automatically extracting the field welds and overlaying them on the isometrics. With our automation,
-										we are able to reduce weld mapping time by up to 80%.
-									</li>
-									<li class="list-group-item bg-white">
-										<i class="fas fa-caret-right invisible"> </i>
-										Whether estimating a job or building a work package, a bill of materials (BOM) is essential. We were
-										given an opportunity to extract the BOM from over a 1000 iso’s; both assembly and field. To complete
-										this task, we used our automated processes to extract the BOM and provided an excel copy. Because
-										the extraction was automated, it was completed in hours with an extremely high degree of accuracy.
-										No matter your discipline, our processes can take days out of your planning or estimating cycles.
-									</li>
-								</ul>
-							</div>
-
-						</div>
-
-						<div class="carousel-item" style="text-align: center;">
-
-							<div class="pt-4">
-								<img src="assets/images/linked3.png" class="rounded rounded-3"
-										 style="max-width: 100%;" loading="lazy" alt="">
-							</div>
-
-							<div class="pt-3">
-								<ul class="list-group list-group-flush pt-1 rounded rounded-3">
-									<li class="list-group-item bg-white">
-										<i class="fas fa-caret-right invisible"> </i>
-										We recently split a vendor iso book with over 500 drawings into individual files, named with the
-										document number from the drawing. We automated the process and completed the task in less than five
-										hours. Our automation can save you days of repetitive work.
-									</li>
-									<li class="list-group-item bg-white">
-										<i class="fas fa-caret-right invisible"> </i>
-										Weld mapping is an important but time-consuming job. Our software simplifies this work by
-										automatically extracting the field welds and overlaying them on the isometrics. With our automation,
-										we are able to reduce weld mapping time by up to 80%.
-									</li>
-									<li class="list-group-item bg-white">
-										<i class="fas fa-caret-right"> </i>
-										Whether estimating a job or building a work package, a bill of materials (BOM) is essential. We were
-										given an opportunity to extract the BOM from over a 1000 iso’s; both assembly and field. To complete
-										this task, we used our automated processes to extract the BOM and provided an excel copy. Because
-										the extraction was automated, it was completed in hours with an extremely high degree of accuracy.
-										No matter your discipline, our processes can take days out of your planning or estimating cycles.
-									</li>
-								</ul>
-							</div>
-
-						</div>
-
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselTWO" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselTWO" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-
-				</div>
-			</div>
+		<div class="pt-5 " style="color: whitesmoke;">
+			<picture>
+				<source srcset="assets/images/linked3.webp">
+				<img src="assets/images/linked3.jpg" class="card-img-top align-self-center pt-2 mx-auto px-0"
+								alt="Bill of materials extracted from PDF to Excel" type="image/webp"
+								style="width: 746px; max-width: 100%; height: auto;">
+			</picture>
 		</div>
 	</section>
 
 	<!-- ***
 		BLUE TO WHITE 
 	*** -->
-	<div class="row grad-bg">
+	<div class="row grad-bg" style="transform: translateY(-2px);">
 		<div class="col p-0 m-0">
-			<svg id="wave2" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<svg id="wave2" viewbox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
 				<defs>
-					<linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
-						<stop stop-color="whitesmoke" offset="0%"></stop>
-						<stop stop-color="whitesmoke" offset="100%"></stop>
-					</linearGradient>
+					<lineargradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+						<stop stop-color="white" offset="0%"></stop>
+						<stop stop-color="white" offset="100%"></stop>
+					</lineargradient>
 				</defs>
 				<path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-2)"
 							d="M0,80L34.3,71.7C68.6,63,137,47,206,35C274.3,23,343,17,411,23.3C480,30,549,50,617,60C685.7,70,754,70,823,61.7C891.4,53,960,37,1029,36.7C1097.1,37,1166,53,1234,60C1302.9,67,1371,63,1440,65C1508.6,67,1577,73,1646,70C1714.3,67,1783,53,1851,51.7C1920,50,1989,60,2057,53.3C2125.7,47,2194,23,2263,18.3C2331.4,13,2400,27,2469,40C2537.1,53,2606,67,2674,75C2742.9,83,2811,87,2880,86.7C2948.6,87,3017,83,3086,70C3154.3,57,3223,33,3291,25C3360,17,3429,23,3497,21.7C3565.7,20,3634,10,3703,20C3771.4,30,3840,60,3909,63.3C3977.1,67,4046,43,4114,38.3C4182.9,33,4251,47,4320,43.3C4388.6,40,4457,20,4526,21.7C4594.3,23,4663,47,4731,56.7C4800,67,4869,63,4903,61.7L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z">
@@ -568,74 +380,76 @@ INTRO SECTION
 	<!-- ***
 		CONTACT SECTION
 		*** -->
-	<section id="ContactSection" style="transform: translateY(-2px);">
-		<div class="row other-bg">
-			<div class="col	 mx-auto p-2 pt-4" style="max-width: 800px;">
+	<section id="ContactSection" class="section-contact pt-3">
+		<div style="text-align: center; max-width: 800px;" class="mx-auto pt-0">
+			<div class="h1"><i class="fas fa-mail-bulk"></i> Contact Us</div>
+			<div class="fs-3">Would you like a demo? Have any questions?
+			</div>
+			<div class="py-2">
+				<a href="mailto:info@howardkind.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+					info@howardkind.com</a>
 
-				<div style="text-align: center;">
-					<div class="h1"><i class="fas fa-mail-bulk"></i> Contact Us</div>
-					<div class="fs-3">Would you like a demo? Have any questions?
+				<a href="tel:1-800-369-3763" class="btn btn-primary ">1-800-369-3763</a>
+			</div>
+			<div class="pt-3">
+				or message us directly:
+			</div>
+			<div>
+
+				<div id="Thanks">
+					<div id="ThanksText1" class="visually-hidden vertical-center h3 pt-5">
+						Thank you. {1}
 					</div>
-					<div class="py-2">
-						<a href="mailto:info@howardkind.com" target="_blank" rel="noopener noreferrer"
-							 class="link-dark">info@howardkind.com</a>
-					</div>
-					<div>
-						<a href="tel:1-800-369-3763" class="link-dark">1-800-369-3763</a>
-					</div>
-					<div class="pt-3">
-						or message us directly:
-					</div>
-					<div>
-						<div id="Thanks">
-							<div id="ThanksText1" class="visually-hidden vertical-center h3 pt-5">
-								Thank you. We will be in touch soon.
-							</div>
-							<div id="ThanksText2" class="visually-hidden vertical-center h3">
-								We will be in touch soon.
-							</div>
-						</div>
-						<form action="https://api.staticforms.xyz/submit" name="inputform" id="inputForm" method="post">
-							<input type="hidden" name="accessKey" value="5a81fb02-c5ec-4db6-b023-00d0d4eeddc4">
-							<!-- Required -->
-							<div class="form-group">
-								<input type="text" name="name" placeholder="Name" class="form-control"> <!-- Optional -->
-							</div>
-							<div class="form-group">
-								<input type="email" name="email" placeholder="Email*" class="form-control" required>
-								<!-- Optional -->
-							</div>
-							<div class="form-group">
-								<input type="text" name="phone" placeholder="Phone (optional)" class="form-control">
-								<!-- Optional -->
-							</div>
-							<div class="form-group">
-								<textarea name="message" rows="7" class="form-control" placeholder="Your message"></textarea>
-								<!-- Optional -->
-							</div>
-							<input type="text" name="honeypot" style="display: none;" placeholder="NA">
-							<!-- Optional -->
-							<!-- <input type="hidden" name="redirectTo" value="#"> -->
-							<!-- Optional -->
-							<div>
-								<button onclick="send()" class="btn button rounded border border-2 my-1 w-100">SEND</button>
-							</div>
-							<div class="text-center py-2">
-								We value privacy. We will never sell your data or send you unsolicited email.
-							</div>
-							<div class="pb-5"></div>
-							<div class="pb-lg-5"></div>
-						</form>
+					<div id="ThanksText2" class="visually-hidden vertical-center h3">
+						We will be in touch soon.
 					</div>
 				</div>
+
+				<form action="https://api.staticforms.xyz/submit" name="inputform" id="inputForm" method="post" class="px-2">
+					<input type="hidden" name="accessKey" value="5a81fb02-c5ec-4db6-b023-00d0d4eeddc4">
+					<!-- Required -->
+					<div class="form-group py-1">
+						<input type="text" name="name" placeholder="Name" class="form-control border-dark"> <!-- Optional -->
+					</div>
+					<div class="form-group py-1">
+						<input type="email" name="email" placeholder="Email*" class="form-control border-dark" required>
+						<!-- Optional -->
+					</div>
+					<div class="form-group py-1">
+						<input type="text" name="phone" placeholder="Phone (optional)" class="form-control border-dark">
+						<!-- Optional -->
+					</div>
+					<div class="form-group py-1">
+						<textarea name="message" rows="7" class="form-control border-dark" placeholder="Your message"></textarea>
+						<!-- Optional -->
+					</div>
+					<input type="text" name="honeypot" style="display: none;" placeholder="NA">
+					<!-- Optional -->
+					<!-- <input type="hidden" name="redirectTo" value="#"> -->
+					<!-- Optional -->
+					<div>
+						<button onclick="send()" class="btn btn-primary btn-lg rounded rounded-2 fw-light w-100 mt-1"
+										style="border: 1px black solid;">Send</button>
+					</div>
+
+					<div class="text-center py-2">
+						We value privacy. We will never sell your data or send you unsolicited email.
+					</div>
+
+					<div class="pb-5">&nbsp;</div>
+					<!-- <div class="pb-5"></div>
+					<div class="pb-5"></div> -->
+
+				</form>
 			</div>
 		</div>
+
 	</section>
 
 	<!-- ***
 		FOOTER 
 	*** -->
-	<footer>
+	<footer class="grad-bg">
 		<div class="container py-2">
 			<div class="row align-items-center">
 				<div class="col">
@@ -657,6 +471,7 @@ INTRO SECTION
 				</div>
 			</div>
 		</div>
+
 	</footer>
 
 </body>
@@ -665,21 +480,21 @@ INTRO SECTION
 				integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 				crossorigin="anonymous"></script>
 
-
-
 <!-- SMOOTH SCROLLING TO THE MAJOR SECTIONS -->
 <!-- https://github.com/iamdustan/smoothscroll -->
-<script defer src="assets/js/smoothscroll.min.js"></script>
+<!--<script defer src="assets/js/smoothscroll.min.js"></script>-->
 <script>
 
-	function smoothScroolTo(id) {
+	function smoothScrollTo(id) {
+
 		document.getElementById('navbarNav').classList.remove('show');
 
-		const SoftwareSection = document.getElementById(id);
+		const Section = document.getElementById(id);
 		const NavHeader = document.getElementById('NavHeader');
 
-		let y1 = SoftwareSection.getBoundingClientRect().top;
+		let y1 = Section.getBoundingClientRect().top;
 		let y2 = NavHeader.getBoundingClientRect().height;
+
 		let y = y1 - y2;
 
 		window.scrollBy({ top: y, behavior: 'smooth' });

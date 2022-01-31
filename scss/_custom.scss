@@ -1,15 +1,39 @@
-$carousel-control-color: #f00 !important;
-$carousel-dark-caption-color:#f00 !important;
-$carousel-caption-color: #f00 !important;
-
 // import bootstrap
 // @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Configuration
-@import "../node_modules/bootstrap/scss//functions";
+@import "../node_modules/bootstrap/scss/functions";
+
 @import "../node_modules/bootstrap/scss/variables";
+
+
+// // First override some or all individual color variables
+// $primary: #041146;
+// $secondary: #3134d8;
+// $success: #3e8d63;
+// $info: #13101c;
+// $warning: #ff00ff;
+// $danger: #d62518;
+// $light: #f8f9fa;
+// $dark: #343a40;
+
+// // Then add them to your custom theme-colors map, together with any additional colors you might need
+// $theme-colors: (
+//   primary: $primary,
+//   secondary: $secondary,
+//   success: $success,
+//   info: $info,
+//   warning: $warning,
+//   danger: $danger,
+//   light: $light,
+//   dark: $dark,
+//   // add any additional color below
+// );
+
+
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/utilities";
+
 
 // Layout & components
 @import "../node_modules/bootstrap/scss/root";
@@ -54,4 +78,3 @@ $secondary: #3134d8;
 
 $black-offset: #2f2f41;
 $white-offset: #fff6f8;
-$steel: #5c5a5a;

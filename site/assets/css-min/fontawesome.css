@@ -49,23 +49,6 @@
   line-height: 1;
 }
 
-.fa-ul {
-  list-style-type: none;
-  margin-left: 2.5em;
-  padding-left: 0;
-}
-.fa-ul > li {
-  position: relative;
-}
-
-.fa-li {
-  left: -2em;
-  position: absolute;
-  text-align: center;
-  width: 2em;
-  line-height: inherit;
-}
-
 @keyframes fa-spin {
   0% {
     transform: rotate(0deg);
@@ -80,6 +63,10 @@ readers do not read off random characters that represent icons */
 
 .fa-arrow-up:before {
   content: "\f062";
+}
+
+.fa-caret-right:before {
+  content: "\f0da";
 }
 
 .fa-check-circle:before {

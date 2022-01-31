@@ -1,12 +1,11 @@
 @use "../custom" as *;
 @use "./../components/mixins" as *;
 
+
 .menu {
-
-
-	div{
-		a{
-			img{
+	div {
+		a {
+			img {
 				min-height: 35px;
 				height: auto;
 				width: 100%;
@@ -14,18 +13,29 @@
 		}
 	}
 
-
-@include gradient;
-
-
+	@include gradient;
 
 	li {
 		padding: 0 0.7rem;
-		
+
 		a {
 			color: $white-offset !important;
 			text-transform: capitalize;
 			font-weight: 400;
 		}
 	}
+}
+
+.navbar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	transition-duration: 0.3s;
+	opacity: 0.9;
+}
+
+.navbar:hover
+{
+	opacity: 1;
 }
